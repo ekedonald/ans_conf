@@ -9,5 +9,5 @@
 #- name: import handlers
 #  import_tasks: ../handlers/main.yml
 
-#- name: force the handler
-#  meta: flush_handlers
+- name: force the handler
+  meta: flush_handlers
