@@ -14,3 +14,7 @@
 - name: print out the output of the shell command
   debug:
     msg: "{{ foo['stdout'] }}"
+
+- name: print out the variable
+  debug:
+    var: dbname
