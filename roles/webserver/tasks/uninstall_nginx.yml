@@ -8,9 +8,9 @@
     state: absent
 
 - name: run the shell command to see if nginx is gone
-  shell: which nginx
+  shell: echo hello world
   register: foo
 
 - name: print out the output of the shell command
   debug:
-    msg: "{{ foo['stdout'] }}"
+    msg: "{{ foo.stdout }}"
