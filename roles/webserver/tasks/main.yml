@@ -5,4 +5,4 @@
   
 - name: install nginx
   import_tasks: install_nginx.yml
-  when: dbname != 'x'
+  when: dbname == 'y'
