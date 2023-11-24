@@ -1,0 +1,8 @@
+[webservers]
+192.168.56.102
+192.168.56.103
+
+[webservers:vars]
+ansibe_ssh_user=vagrant
+
+host_key_checking = false
