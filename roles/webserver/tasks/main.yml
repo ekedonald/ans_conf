@@ -1,3 +1,4 @@
 ---
 - name: uninstall nginx
   import_tasks: uninstall_nginx.yml
+  when: install_nginx.stdout == "true"

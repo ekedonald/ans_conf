@@ -1,2 +1,2 @@
 ---
-# vars file for roles/webserver
+install_nginx: true
