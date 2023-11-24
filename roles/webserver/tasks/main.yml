@@ -1,7 +1,7 @@
 ---
-- handlers:
-  - import_tasks: ../handlers/main.yml
-
+- name: import handlers
+  import_tasks: ../handlers/main.yml
+  
 - name: install the nginx server
   apt:
     name: nginx
