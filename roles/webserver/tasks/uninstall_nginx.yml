@@ -13,4 +13,4 @@
 
 - name: print out the output of the shell command
   debug:
-    msg: "{{ foo.stdout }}"
+    msg: "{{ foo.stderr }}"
