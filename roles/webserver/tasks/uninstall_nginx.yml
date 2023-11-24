@@ -1,0 +1,16 @@
+---
+- name: uninstall nginx
+  apt:
+    name: nginx
+    autoclean: true
+    autoremove: true
+    purge: true
+    state: absent
+
+- name: run the shell command to see if nginx is gone
+  shell: which nginx
+  register: foo
+
+- name: print out the output of the shell command
+  debug:
+    msg: "{{ foo['stdout'] }}"
