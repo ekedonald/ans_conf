@@ -1,2 +1,13 @@
 ---
-# tasks file for roles/webserver
+- handlers:
+  - import_tasks: ../handlers/main.yml
+
+- name: install the nginx server
+  apt:
+    name: nginx
+    state: latest
+    update_cache: true
+  notify: restart nginx
+
+- name: force the handler
+  meta: flush_handlers
