@@ -5,9 +5,6 @@
     state: latest
     update_cache: true
   notify: restart nginx
-  
-#- name: import handlers
-#  import_tasks: ../handlers/main.yml
 
 - name: force the handler
   meta: flush_handlers
