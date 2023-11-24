@@ -1,6 +1,10 @@
 ---
-#- name: uninstall nginx
-#  import_tasks: uninstall_nginx.yml
+- name: uninstall nginx
+  import_tasks: uninstall_nginx.yml
+  debug: dbname
+  when: dbname == 'x'
   
 - name: install nginx
   import_tasks: install_nginx.yml
+  debug: dbname
+  when: dbname != 'x'
